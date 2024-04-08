@@ -4,11 +4,11 @@ WORKDIR /usr/src/app
 
 COPY . .
 
-WORKDIR /usr/src/app/blog-main/frontend
+WORKDIR /usr/src/app/frontend
 RUN npm i
 RUN npm run build
 
-WORKDIR /usr/src/app/blog-main/backend
+WORKDIR /usr/src/app/backend
 RUN npm i
 
 EXPOSE 3001
